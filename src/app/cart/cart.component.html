@@ -1,0 +1,56 @@
+<div class="row">
+  <div class="col-md-10">                
+    
+    <section class="panel">
+      <div class="panel-heading no-b">
+          <h1> <b> Cart</b></h1>                  
+        <hr>                    
+      </div>
+      <section>                  
+        <!-- Menu -->
+        <div class="tab-pane fade active in" id="home1">    
+
+          <div class="col-lg-12">
+            <h4 class="title-bar yellow">Your Order</h4>
+
+            <div class="well product-item" *ngFor="let x of products">
+              <div class="cross">
+                <img src="assets/images/close.png" (click)="onUserDeleteProduct(x.cart_id)">
+              </div>
+              <h3><b>{{x.quantity}}x <span class="color-yellow">{{x.name}}</span></b>
+              <span class="pull-right"> <b>SAR {{x.totalprice}}</b></span>
+              </h3> 
+              <!-- <h4>{{x.description}}</h4> -->
+              <img src="assets/images/minus.png" class="icon-add-sub" (click)="decrementQuantity(x.cart_id)">
+              <!-- <input type="text" name="" class="text-box center" placeholder="01"> -->
+              {{x.quantity}}
+              <img src="assets/images/plus.png" class="icon-add-sub" (click)="incrementQuantity(x.cart_id)">
+              <br><br>
+            </div>
+
+            <div class="col-md-12 center">
+                  <button class="btn btn-madinati filled" (click)="addProducts()">Add Products</button>
+            </div>
+
+            <h2>Order Summary</h2>
+            <hr>
+            <h3> Order Subtotal <span class="pull-right"> SAR {{subTotal}} </span> </h3>
+            <h3> Delivery Fee <span class="pull-right"> {{items.delivery_fee}} </span> </h3>
+            <br>
+
+              <h3 class="title-bar">Grand Total <span class="pull-right"> SAR {{total}}</span></h3>
+
+            <div class="col-md-4 col-lg-4">
+              <div class="btn-box yellow center">
+                <button class="btn-madinati" (click)="proceedToCheckout(total)">Proceed</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Menu end -->
+      </section>
+            
+    </section>
+
+  </div>        
+</div>

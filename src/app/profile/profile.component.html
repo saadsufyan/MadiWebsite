@@ -1,0 +1,111 @@
+<div class="row">
+  <div class="col-md-10">                
+    
+    <section class="panel">
+      <div class="panel-heading no-b">
+          <h1> <b> Profile </b>  </h1>                  
+        <hr>                    
+      </div>
+      <section>                  
+        <!-- Menu -->
+        <div class="tab-pane fade active in" id="home1">    
+        
+          <div class="col-lg-12">
+            <div class="col-xs-1 col-sm-1 col-md-1">
+              
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 dp-box">
+               <!-- <label class="" for="upload-file-selector"> 
+                <input id="upload-file-selector" type="file" name="file1" (change)="onChange($event)">
+                 <img [src]="avatar"> 
+                 </label>  -->
+
+
+              <!-- <input class="fileInput" type="file" name="file1" (change)="onChange($event)"> -->
+               <!-- <img [src]="avatar">  -->
+            </div>
+            <br><br>
+            <h4 class="title-bar"> &nbsp;&nbsp; User Name </h4>
+          </div>
+
+          <button class="btn-madinati filled pull-right">Select Frequent Locations</button>
+            <br>
+            <input type="text" name="" class="text-box sm" placeholder="Abdul Aziz" [(ngModel)]="name">
+
+            <div class="col-xs-2 col-sm-2 col-md-2">
+                <label>
+                  <h3><input type="radio" class="radio-btn" name="gendor" value="male" [(ngModel)]="gender"> Male</h3>
+                </label>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2">
+                <label>
+                  <h3><input type="radio" class="radio-btn" name="gendor" value="female" [(ngModel)]="gender"> Female</h3>
+                </label>
+            </div>
+
+            <br><br><br>
+            <!-- <input type="text" name="" class="text-box sm" placeholder="DD-MM-YYYY" [(ngModel)]="birth"> -->
+            <input type="date" class="text-box sm" id="exampleInput" name="inputdate" [(ngModel)]="birth" placeholder="mm-dd-yyy"  required />
+
+            <br><br><br>
+            <input type="text" name="" class="text-box sm" placeholder="myname@domainname.com" [(ngModel)]="email" required>
+
+            <br><br><br>
+            <input type="text" name="" class="text-box sm" placeholder="+966 1234 56 7" [(ngModel)]="phone" required>
+
+            <br><br><br>
+            <div class="form-group">
+              <b>Country</b>
+              <select class="selectbox" [(ngModel)]="country">
+                  <!-- <option selected="">Country</option> -->
+                  <option value="SA">Saudi Arabia</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <b>City</b>
+              <select id="city" class="selectbox" [(ngModel)]="city">
+                  <!-- <option selected="">City</option> -->
+                  <option>Abha</option>
+                  <option>Al-Ahsa</option>
+                  <option>Al-kharj</option> 
+                  <option>Al Qunfudhah</option>
+                  <option>Buraidah</option>
+                  <option>Dammam</option>
+                  <option>Hail</option>
+                  <option>Hafar Al-batin</option>
+                  <option>Jeddah</option>
+                  <option>Jubail</option>
+                  <option>Khamis Mushait</option> 
+                  <option>Khobar</option>
+                  <option>Makkah</option>                 
+                  <option>Madina</option>
+                  <option>Najran</option>
+                  <option>Qatif</option>
+                  <option>Riyadh</option>
+                  <option>Safwa</option>
+                  <option>Taif</option>
+                  <option>Tabuk</option>
+                  <option>Yanbu</option>
+              </select>
+            </div>
+
+            <input type="text" name="" class="text-box sm" placeholder="Address" [(ngModel)]="address">
+
+            <br><br>
+            <div class="col-xs-4 col-sm-4 col-md-4 center">
+            <div class="btn-box">
+              <button class="btn-madinati" (click)="updateProfile(name,email,phone)">Save</button>
+            </div>
+          </div>
+
+        </div>
+        <!-- Menu end -->
+      </section>
+      
+      
+    </section>
+   
+  </div>        
+</div>
+

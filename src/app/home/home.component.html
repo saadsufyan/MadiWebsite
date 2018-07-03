@@ -1,0 +1,22 @@
+
+ <!-- <app-headers></app-headers>  -->
+<!-- <app-nav></app-nav> -->
+
+<div class="col-md-12 col-lg-12">    
+  <section class="panel"> 
+      <h1> <b>  Home  </b></h1>                  
+    <hr>
+      <div class="panel-body">
+      <div class="col-md-4 col-lg-4 category-box"  *ngFor="let x of categories" (click)="goToVendors(x.id)">
+        <div class="col-lg-12">
+          <div class="heading-box"> 
+            <h1>{{x.company_name}}</h1>
+          </div>
+          <img src="{{x.avatar}}" class="img-category">
+        </div>
+      </div>
+    </div>    
+  </section> 
+</div>
+
+<router-outlet></router-outlet>

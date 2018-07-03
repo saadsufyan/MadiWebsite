@@ -1,0 +1,112 @@
+  <div class="row">
+    <div class="col-md-10">                
+      
+      <section class="panel">
+        <div class="panel-heading no-b">
+            <h1> <b> Checkout </b>  </h1>                  
+          <hr>                    
+        </div>
+        <section>                  
+          <!-- Menu -->
+          <div class="tab-pane fade active in" id="home1">    
+
+
+
+            <div class="col-lg-12">
+              <h4 class="title-bar">Your Total <span class="pull-right">  SAR {{totalprice}} </span> </h4>
+
+              <!-- <h3>Cash On Delivery</h3> -->
+              <div class="col-md-12">
+                
+                <div class="col-md-6">
+                  <label>
+                    <h3><input type="radio" class="radio-btn" name="delivery" value="cash" [(ngModel)]="payment"> Cash On Delivery</h3>
+                  </label>
+                </div>
+                <div class="col-md-6">
+                  <label>
+                    <h3><input type="radio" class="radio-btn" name="delivery" value="card" [(ngModel)]="payment"> Debit/credit card</h3>
+                  </label>
+                </div>
+
+                <div class="col-md-6">
+                  <label>
+                    <h3><input type="radio" class="radio-btn" name="type" value="delivery" [(ngModel)]="delivery" (click)="showFilter()"> Delivery</h3>
+                  </label>
+                </div>
+                <div class="col-md-6">
+                  <label>
+                    <h3><input type="radio" class="radio-btn" name="type" value="pickup" [(ngModel)]="delivery"> Pickup</h3>
+                  </label>
+                </div>
+
+              </div>
+
+              <div class="col-md-12" *ngIf="filter">
+                <h3><b>Frequent Location </b> </h3>
+
+                <div class="col-md-4">
+                  <label>
+                    <h3><input type="radio" class="radio-btn" name="loc" value="1" [(ngModel)]="branch"> Home</h3>
+                  </label>
+                </div>
+                <div class="col-md-4">
+                  <label>
+                    <h3><input type="radio" class="radio-btn" name="loc" value="2" [(ngModel)]="branch"> Office</h3>
+                  </label>
+                </div>
+                <div class="col-md-4">
+                  <label>
+                    <h3><input type="radio" class="radio-btn" name="loc" value="3" [(ngModel)]="branch"> None</h3>
+                  </label>
+                </div>
+
+              </div>
+
+              <div class="col-md-12">                        
+
+                <br>
+                <input type="text" name="name" class="text-box sm" placeholder="Full Name" [(ngModel)]="name" required>
+
+                <br><br><br>
+                <input type="text" name="phone" class="text-box sm" placeholder="Phone Number" [(ngModel)]="phone" required>
+
+                
+                <img src="assets/images/marker.png" align="right" style="width:5%"> 
+                <input disabled type="text" name="map" class="text-box sm" placeholder="Address on map">
+                 
+
+                <br><br><br>
+                <input type="text" name="address" class="text-box sm" placeholder="Complete Address" [(ngModel)]="address">
+
+                <br><br><br>
+                <input type="text" name="instructions" class="text-box sm" placeholder="Delivery Instructions" [(ngModel)]="instructions">
+
+                <br><br><br>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                  <div class="btn-box yellow center">
+                    <button class="btn-madinati" (click)="onBuyProduct(name,phone,address)">Buy</button>
+                  </div>
+                </div>
+
+              </div>
+
+
+
+
+
+            </div>
+
+
+          </div>
+          <!-- Menu end -->
+        </section>
+        
+        
+      </section>
+      
+
+  
+
+    </div>        
+  </div>

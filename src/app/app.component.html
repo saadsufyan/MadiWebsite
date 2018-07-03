@@ -1,20 +1,190 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo=">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="http://angularjs.blogspot.com/">Angular blog</a></h2>
-  </li>
-</ul>
 
+ 
+<!-- <a routerLink="/Login" routerLinkActive="active">Login</a> -->
+
+<!-- <div class="container" style="    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;"> 
+  <router-outlet></router-outlet> 
+</div>   -->
+<!-- 
+<button (click)="gotoDetail()">open login page </button> -->
+
+
+
+
+
+  <div class="app">
+    <!-- top header -->
+    <header class="header header-fixed navbar">
+
+      <div class="brand">
+        <img src="assets/images/madinati_logo_white.png" class="img-logo" alt="">
+        <!-- toggle offscreen menu -->
+        <a href="javascript:;" class="ti-menu off-left visible-xs" data-toggle="offscreen" data-move="ltr"></a>
+        <!-- /toggle offscreen menu -->
+
+        <!-- logo -->
+        <!-- <a href="" class="navbar-brand">          
+          <span class="heading-font">Service Provider Admin </span>
+          <h5>          
+          Service Provider Admin </h5>
+        </a> -->
+        <!-- /logo -->
+      </div>
+
+      <ul class="nav navbar-nav">
+        <li class="hidden-xs hidden-lg hidden-md hidden-sm">
+          <!-- toggle small menu -->
+          <a href="javascript:;" class="toggle-sidebar">
+            <i class="ti-menu"></i>
+          </a>
+          <!-- /toggle small menu -->
+        </li>
+        <li class="header-search">          
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right top-nav">
+
+        <!-- <li class="off-right" style="padding: 5px 0;">
+          <a href="javascript:;" data-toggle="dropdown" class="no-hover">
+            <img src="images/icon_home.png" class="header-avatar img-circle" alt="" title="">
+            <span class="hidden-xs ml10"><b>HOME</b></span>
+          </a>
+        </li> -->
+
+        <li>
+          <div class="btn-box black">
+            <button type="button" class="btn-madinati"><a routerLink="/Home" routerLinkActive="active" style="color:white">HOME</a></button>
+          </div>
+        </li>
+        <li>
+          <div class="btn-box yellow">
+            <button type="button" class="btn-madinati" (click)="UserLogout()">LOGOUT</button>
+          </div>
+        </li>
+
+        
+
+
+      </ul>
+    </header>
+    <!-- /top header -->
+
+    <section class="layout" style="padding: 0px;margin-top: -18px;">
+      <!-- sidebar menu -->
+      <aside class="sidebar offscreen-left">
+        <!-- main navigation -->
+        <nav class="main-navigation" data-height="auto" data-size="6px" data-distance="0" data-rail-visible="true" data-wheel-step="10">
+          <ul class="nav">
+            <!-- dashboard -->
+            <li>
+              <a href="javascript:;">
+                <i class="fa fa-chevron-right"></i>
+                <span><a routerLink="/Home" routerLinkActive="active" style="color:white">Home</a></span>
+              </a>
+            </li>
+            <!-- /dashboard -->
+            
+
+            <!-- Modules -->
+            <li>
+              <a href="javascript:;">
+                <!-- <i class="ti-settings"></i> -->
+                <i class="fa fa-chevron-right"></i>
+                <span><a routerLink="/Profile" routerLinkActive="active" style="color:white">My Profile</a></span>
+              </a>
+            </li>
+            <!-- /Modules -->
+
+            <!-- Reports -->
+            <li>
+              <a href="javascript:;">
+                <!-- <i class="ti-support"></i> -->
+                <i class="fa fa-chevron-right"></i>
+                <span>Search</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <!-- <i class="ti-support"></i> -->
+                <i class="fa fa-chevron-right"></i>
+                <span>My Orders</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <!-- <i class="ti-support"></i> -->
+                <i class="fa fa-chevron-right"></i>
+                <span>My Bookings</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <!-- <i class="ti-support"></i> -->
+                <i class="fa fa-chevron-right"></i>
+                <span>Map</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <!-- <i class="ti-support"></i> -->
+                <i class="fa fa-chevron-right"></i>
+                <span><a routerLink="/Cart" routerLinkActive="active" style="color:white">Cart</a></span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <!-- <i class="ti-support"></i> -->
+                <i class="fa fa-chevron-right"></i>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <!-- <i class="ti-support"></i> -->
+                <i class="fa fa-chevron-right"></i>
+                <span>Contact Us</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <!-- <i class="ti-support"></i> -->
+                <i class="fa fa-chevron-right"></i>
+                <span (click)="UserLogout()">Logout</span>
+              </a>
+            </li>
+
+            <!-- /Reports -->
+            
+          </ul>        
+        </nav>
+      </aside>
+      <!-- /sidebar menu -->
+
+      <!-- main content -->
+      <section class="main-content">
+        <!-- content wrapper -->
+          <!-- <app-home></app-home>   -->
+          
+        <div class="content-wrap">            
+
+          
+
+          <!-- inner content wrapper -->
+          <div class="wrapper no-p">
+
+            <router-outlet></router-outlet>
+
+          </div>
+          <!-- /inner content wrapper -->
+
+        </div>
+        <!-- /content wrapper -->
+        <a class="exit-offscreen"></a>
+      </section>
+      <!-- /main content -->
+    </section>
+
+  </div>

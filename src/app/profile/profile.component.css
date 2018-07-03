@@ -1,0 +1,25 @@
+.dp-box {
+    height: 160px;
+    width: 160px;
+    border-radius: 90px;
+    background: white;
+    border: solid 4px;
+    background: url(/assets/images/face4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+label.btn.btn-default {
+padding: 10px 24px 3px 18px;
+font-size: 16px;
+}
+
+#upload-file-selector {
+display: none;
+}
+
+.btn-madinati.filled {
+    background: #4b4b4b !important;
+    transform: skew(0deg) !important;
+    padding: 18px 24px !important;
+}
